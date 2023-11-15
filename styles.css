@@ -1,0 +1,48 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em 0;
+    justify-content: space-evenly;
+    margin: 1em 0;
+    /* Include this if you want the card container to fill the height of the viewport. On desktop, this will cause each card's height to stretch to fill the available viewport. */
+    /* min-height: calc(100vh - 2em); */
+}
+
+.card {
+    color: #000;
+    margin: 0 1em;
+    min-height: 200px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card-content {
+    margin: 0 1em;
+}
+
+.turqoise {
+    background: #48D5C5;
+}
+
+.orange {
+    background: #FB9274;
+}
+
+.yellow {
+    background: #FAD161;
+}
+
+/* ============================
+Media Queries 
+============================ */
+
+@media all and (min-width: 700px){
+    .card-container {
+        flex-direction: row;
+    }
+
+    .card {
+        margin: 0;
+        width: 30%;
+    }
+}
